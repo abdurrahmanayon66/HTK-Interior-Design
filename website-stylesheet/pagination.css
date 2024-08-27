@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagination{
+  margin-top:70px;
+  border-radius:4px;
+}
+
+.pagination ul{
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  background: #fffcd3;
+  padding: 8px;
+  border-radius:4px;
+  box-shadow:2px 3px 3px rgba(0,0,0,0.5);
+}
+.pagination ul li{
+  color: #000;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination ul li.numb.first{
+  margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last{
+  margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots{
+  font-size: 22px;
+  cursor: default;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: #000;
+  background:#fae050 ;
+}
+
+.pagination ul a{
+  text-decoration:none;
+  color:#000;
+  margin:0 10px;
+  font-size:1.2rem;
+  font-weight:600;
+  padding:8px 18px;
+  border-radius: 50%;
+}
+
+.pagination a.active {
+  background-color:#fae050;
+}
+
+@media (max-width:460px){
+  .pagination{
+    margin-top:40px;
+    border-radius:4px;
+    width:100%;
+    padding:0 2%;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .pagination ul{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    background: #fffcd3;
+    padding:4px;
+    border-radius:4px;
+    box-shadow:2px 3px 3px rgba(0,0,0,0.5);
+  }
+  .pagination ul li{
+    color: #000;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size:0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  .pagination ul li.numb{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+  }
+  .pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+  }
+  .pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+  }
+  .pagination ul li.dots{
+    font-size:1rem;
+    cursor: default;
+  }
+  .pagination ul li.btn{
+    padding: 0 20px;
+    border-radius: 50px;
+  }
+  .pagination li.active,
+  .pagination ul li.numb:hover,
+  .pagination ul li:first-child:hover,
+  .pagination ul li:last-child:hover{
+    color: #000;
+    background:#fae050 ;
+  }
+  
+  .pagination ul a{
+    text-decoration:none;
+    color:#000;
+    margin:0 10px;
+    font-size:1rem;
+    font-weight:600;
+    padding:8px 18px;
+    border-radius: 50%;
+  }
+  
+  .pagination a.active {
+    background-color:#fae050;
+  }
+}

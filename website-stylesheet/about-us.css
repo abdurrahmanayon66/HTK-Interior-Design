@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.about-us{
+    height:100vh;
+    padding:3% 2.5% 0 2.5%;
+    font-family: "Noto Sans Khojki", sans-serif;
+}
+
+.about-us .image-container{
+    height:90%;
+    width:100%;
+    overflow:hidden;
+    background:#000;
+    border-radius:4px;
+    position: relative;
+}
+
+.about-us .image-container img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    opacity:0.6;
+}
+
+.about-us .grid{
+    display:grid;
+    width:100%;
+    grid-template-columns:1fr 1fr;
+    gap:5%;
+    position:absolute; 
+    top:10%;
+}
+
+.about-us .grid .col{
+    color:white;
+}
+
+.about-us .grid .col:nth-of-type(1){
+    padding-top:80px;
+}
+
+.about-us .grid .col:nth-of-type(1) p:nth-of-type(1){
+    font-weight:700;
+    font-size:2rem;
+}
+
+.about-us .grid .col:nth-of-type(1) p{
+    font-size:1.7rem;
+    font-weight:500;
+    padding-left:40px;
+}
+
+.about-us .grid .col:nth-of-type(2){
+    font-size:2.2rem;
+    font-weight:600;
+    padding-right:40px;
+    text-align:right;
+    padding-top:40px;
+}
+
+@media (min-width:1000px) and (max-width:1400px){ 
+    .about-us .grid{
+        display:grid;
+        width:100%;
+        grid-template-columns:1fr 1fr;
+        gap:5%;
+        position:absolute; 
+        top:20%;
+    }
+}
+
+@media (max-width:460px){
+    
+    .about-us{
+        height:90vh;
+        padding:3% 2.5% 0 2.5%;
+        font-family: "Noto Sans Khojki", sans-serif;
+    }
+    
+    .about-us .image-container{
+        height:90%;
+        width:100%;
+        overflow:hidden;
+        background:#000;
+        border-radius:4px;
+        position: relative;
+    }
+    
+    .about-us .image-container img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        opacity:0.6;
+    }
+    
+    .about-us .grid{
+        display:flex;
+        flex-direction:column-reverse;
+        width:100%;
+        position:absolute; 
+        bottom:5%;
+    }
+    
+    .about-us .grid .col{
+        color:white;
+        width:100%;
+    }
+
+    .about-us .grid .col:nth-of-type(1){
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    
+    .about-us .grid .col:nth-of-type(1) p:nth-of-type(1){
+        font-weight:700;
+        font-size:1.25rem;
+    }
+    
+    .about-us .grid .col:nth-of-type(1) p{
+        font-size:1rem;
+        font-weight:500;
+        padding-left:10px;
+        text-align:left;
+    }
+    
+    .about-us .grid .col:nth-of-type(2){
+        font-size:1rem;
+        font-weight:500;
+        padding-right:10px;
+        text-align:right;
+    }
+}

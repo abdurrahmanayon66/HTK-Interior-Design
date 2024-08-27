@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.services{
+    height:120vh;
+    padding:50px 7% 0 7%;
+    font-family: "Noto Sans Khojki", sans-serif;
+}
+
+.services header{
+    font-size:2.5rem;
+    font-weight:600;
+}
+
+.services .grid{
+    margin-top:80px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:80px;
+}
+
+.services .grid .col{
+    height:400px;
+    background-color:#FFFDD0;
+    border-radius:4px;
+    overflow:hidden;
+    box-shadow:4px 5px 5px rgba(0,0,0,0.5);
+    transition:0.6s all;
+    color:#000;
+}
+
+.services .grid .col .image-container{
+    height:300px;
+}
+
+.services .grid .col:hover{
+    transform:scale(1.2);
+}
+
+.services .grid .col p{
+    font-size:1.6em;
+    font-weight:600;
+    text-align:center;
+    margin-top:10px;
+}
+
+@media (min-width:1000px) and (max-width:1100px){
+    .services .grid .col{
+        height:300px;
+        background-color:#FFFDD0;
+        border-radius:4px;
+        overflow:hidden;
+        box-shadow:4px 5px 5px rgba(0,0,0,0.5);
+        transition:0.6s all;
+        color:#000;
+    }
+    
+    .services .grid .col .image-container{
+        width:100%;
+        max-height:60%;
+    }
+
+    .services .grid .col p{
+        font-size:1.6em;
+        margin-top:5px;
+        padding:0 5px;
+    }
+}
+
+@media (min-width:1800px) and (max-width:2400px){
+    .services .grid .col{
+        height:400px;
+        width:400px;
+    }
+}
+
+@media (min-width:1101px) and (max-width:1300px){
+    .services .grid .col{
+        height:400px;
+        background-color:#FFFDD0;
+        border-radius:4px;
+        overflow:hidden;
+        box-shadow:4px 5px 5px rgba(0,0,0,0.5);
+        transition:0.6s all;
+        color:#000;
+    }
+    
+    .services .grid .col .image-container{
+        width:100%;
+        max-height:60%;
+    }
+}
+
+@media (max-width:460px){
+
+    .services{
+        height:1400px;
+        padding:0 7% 0 7%;
+        font-family: "Noto Sans Khojki", sans-serif;
+    }
+    
+    .services header{
+        font-size:1.5rem;
+        font-weight:600;
+    }
+    
+    .services .grid{
+        margin-top:50px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .services .grid .col{
+        height:300px;
+        width:300px;
+        background-color:#FFFDD0;
+        border-radius:4px;
+        overflow:hidden;
+        box-shadow:4px 5px 5px rgba(0,0,0,0.5);
+        transition:0.6s all;
+        color:#000;
+    }
+    
+    .services .grid .col .image-container{
+        height:200px;
+    }
+    
+    .services .grid .col:hover{
+        transform:scale(1.2);
+    }
+    
+    .services .grid .col p{
+        font-size:1.25em;
+        font-weight:600;
+        text-align:center;
+        margin-top:25px;
+    }
+}
